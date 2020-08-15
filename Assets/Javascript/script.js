@@ -1,15 +1,14 @@
-(function(){
     // Functions
     function buildQuiz(){
       // variable to store the HTML output
-      const output = [];
+      var output = [];
   
       // for each question...
       myQuestions.forEach(
         (currentQuestion, questionNumber) => {
   
           // variable to store the list of possible answers
-          const answers = [];
+          var answers = [];
   
           // and for each available answer...
           for(letter in currentQuestion.answers){
@@ -177,5 +176,5 @@ showSlide(currentSlide);
 submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
-})();
+;
   
